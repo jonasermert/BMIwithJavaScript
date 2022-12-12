@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var weight = parseInt(prompt("Bitte gib dein Gewicht ein (kg) : "));
+		var height = parseInt(prompt("Bitte gib deine Größe an (cm):"));
+
+
+		function BMI(w,h)
+		{
+		
+			let result= (weight / ((height * height) 
+                            / 10000)).toFixed(2);
+
+
+			if (result > 18 && result < 24)
+			{
+				document.write("Normal : " +result);
+			}
+			else if (result > 24)
+			{
+				document.write("Übergewichtig: " +result);	
+			}
+			else
+			{
+				document.write("Untergewichtig: " +result);
+			}
+
+		}
+
+		BMI(weight,height);
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+</body>
+</html>
